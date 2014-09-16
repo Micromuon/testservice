@@ -33,6 +33,5 @@ function sendReq(type, path, assertion){
          console.log("***** sendReq() if type == get");
         var req = request.get(path);
         req.end(function(res) {assertion(res)});
-        //req.end(callback);
     }
 }
